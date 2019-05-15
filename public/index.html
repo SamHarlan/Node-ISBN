@@ -7,28 +7,43 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Prime Number Checker</title>
+    <title>ISBN Checker</title>
   </head>
   <style media="screen">
   .pretty {
     margin:auto;
   }
+  img{
+    width: auto;
+    height: 50%;
+  }
   </style>
 
 <body>
       <!-- Centered Image -->
-      <img src="image/Sam_Profile_Pic.jpg" alt="random picture" class="pretty">
-      <h1> Testing with Express</h1>
+      <br>
+      <br>
+      <h1> ISBN Checker Application</h1>
+      <hr>
       <div class ="container">
-        <form actioon = "checkPrime" method = "GET">
-          <div class="form=group">
-            <label for="prime"> Number:</label>
-            <input type="number" class="form-control" id="prime" name="prime">
+        <div class="row">
+          <div class ="col-md-6 col-sm-6">
+            <img src="image/book.png" alt="random picture" class="pretty">
           </div>
-          <div class="form-group">
-            <input type="submit" value="Submit">
+          <div class ="col-md-6 col-sm-6">
+            <br>
+            <br>
+            <form actioon = "checkisbn" method = "GET">
+              <div class="form=group">
+                <label for="isbn"> Number:</label>
+                <input type="number" class="form-control" id="isbn" name="isbn">
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </body>
 </html>
