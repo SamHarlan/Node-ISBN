@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>ISBN Checker</title>
   </head>
+
   <style media="screen">
   .pretty {
     margin:auto;
@@ -17,6 +18,19 @@
     width: auto;
     height: 50%;
   }
+  hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  h1{
+    text-align: center;
+  }
+
   </style>
 
 <body>
@@ -33,10 +47,10 @@
           <div class ="col-md-6 col-sm-6">
             <br>
             <br>
-            <form actioon = "checkisbn" method = "GET">
+            <form action = "checkisbn" method = "GET">
               <div class="form=group">
-                <label for="isbn"> Number:</label>
-                <input type="number" class="form-control" id="isbn" name="isbn">
+                <label for="isbn"> ISBN:</label>
+                <input type="character" placeholder="check isbn" class="form-control" id="isbn" name="isbn">
               </div>
               <div class="form-group">
                 <input type="submit" value="Submit">
